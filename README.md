@@ -5,3 +5,6 @@ This repository contains a Dockerfile image filled with Java toolkits, current u
 - OpenJDK11
 - Apache Tomcat 10.1
 - Gradle
+
+## How to run
+Build the application using this command `docker build . -t {preferred docker image name here}` then run it using docker-compose or `docker run {preferred docker image name here} -p 8080:8080` then watch it run.
