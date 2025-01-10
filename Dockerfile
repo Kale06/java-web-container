@@ -24,6 +24,8 @@ COPY ./commons/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 # Expose the Tomcat port
 EXPOSE 8080
 
+ENV PATH=$PATH:$JAVA_HOME/bin:$CATALINA_HOME/bin
+
 # Check Tomcat version
-WORKDIR /usr/local/tomcat/bin
-CMD ["./catalina.sh", "run"]
+WORKDIR /
+CMD ["catalina.sh", "run"]
