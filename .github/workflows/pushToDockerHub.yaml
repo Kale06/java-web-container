@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the docker image
-      run: docker build . -t ${{ secrets.DOCKER_HUB_USERNAME }}/alpine-java-webapp-container:latest
+      run: docker build ../../ -t ${{ secrets.DOCKER_HUB_USERNAME }}/alpine-java-webapp-container:latest
     - name: Push the docker image to Docker Hub
       run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
     - run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/    alpine-java-webapp-container:latest
