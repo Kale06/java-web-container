@@ -7,4 +7,8 @@ This repository contains a Dockerfile image filled with Java toolkits, current u
 - Gradle
 
 ## How to run
+Pull the image from the Docker Hub repository by executing the command `docker pull kale0602/alpine-java-webapp-container`.
+
+or
+
 Build the application using this command `docker build . -t {preferred docker image name here}` then run it using docker-compose or `docker run {preferred docker image name here} -p 8080:8080` then watch it run.
