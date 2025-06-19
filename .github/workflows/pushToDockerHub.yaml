@@ -3,7 +3,9 @@ name: Push to Docker Hub
 on:
   push:
     branches: ["main", "feature/github-action-runner"]
-    pull_request: ["main"]
+  pull_request: 
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   push_to_docker_hub:
