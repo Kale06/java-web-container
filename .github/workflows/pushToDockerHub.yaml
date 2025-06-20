@@ -1,6 +1,8 @@
 name: Push to Docker Hub
 
 on:
+  schedule:
+    - cron: '0 7 * * 1'
   push:
     branches: ["main", "feature/github-action-runner"]
   pull_request: 

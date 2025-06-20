@@ -15,8 +15,8 @@ RUN mkdir -p /usr/local/tomcat
 # Curl the Tomcat tarball then extract it
 WORKDIR /tmp
 RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.42/bin/apache-tomcat-10.1.42.tar.gz\
-    && tar -xvf apache-tomcat-10.1.34.tar.gz -C /usr/local/tomcat --strip-components=1\
-    && rm -f apache-tomcat-10.1.34.tar.gz
+    && tar -xvf apache-tomcat-10.1.42.tar.gz -C /usr/local/tomcat --strip-components=1\
+    && rm -f apache-tomcat-10.1.42.tar.gz
 
 WORKDIR /usr/local/tomcat
 COPY ./commons/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
